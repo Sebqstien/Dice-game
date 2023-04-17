@@ -1,0 +1,57 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f0f0;
+    border: 10px solid #a4733e;
+    height: 100vh;
+    min-width: 400px;
+    max-width: 100vw;
+}
+
+
+.icon {
+    width: 42px;
+    height: 30px;
+}
+
+.dice {
+    width: 80px;
+    height: auto;
+    border: rgb(150, 150, 150) 1px solid;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width:768px) {
+    .row {
+        height: 520px;
+    }
+
+    ;
+}
+
+.hover:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.active-player {
+    content: url(./images/icons/circle-fill.svg);
+    animation: blink 1s infinite;
+    width: 13px;
+    margin-left: 10px;
+    padding-bottom: 2px;
+}
+
+@keyframes blink{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.winner-player {
+    font-weight: 700;
+    color: red;
+}
+
+.remove {
+    display: none!important; 
+}
